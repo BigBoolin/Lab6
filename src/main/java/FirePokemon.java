@@ -58,7 +58,14 @@ public class FirePokemon extends Pokemon {
      * Implement this.
      */
     public boolean attack(final Pokemon opponent) {
-        return false;
+        if ( getHitPoints() < 0) {
+            return false;
+        }
+        if ( opponent.pokeType == PokemonType.FIRE) {
+            return false;
+        }
+        if (specProb <=
+        return true;
     }
 
 }
